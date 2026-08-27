@@ -25,7 +25,7 @@ ma alcune funzionalità meno comuni, alias e sintassi utilizzate nelle vecchie g
 
 ---
 
-## 1.2 I gruppi di pacchetti
+### 1.2 I gruppi di pacchetti
 
 Un esempio importante riguarda i package group. I **package group** sono insiemi logici di pacchetti RPM che Fedora mantiene raggruppati perché svolgono una funzione comune o perché sono pensati per essere installati insieme. Un gruppo può, per esempio, raccogliere i pacchetti necessari a un determinato ambiente desktop, a una categoria di software o a una particolare funzionalità del sistema.
 
@@ -86,7 +86,7 @@ sudo dnf groupupdate @multimedia
 
 ---
 
-# 2. Fedora KDE Plasma 44: una nuova esperienza di primo avvio
+## 2. Fedora KDE Plasma 44: una nuova esperienza di primo avvio
 
 Il secondo cambiamento importante riguarda specificamente Fedora KDE Plasma. Fedora KDE Plasma 44 introduce una nuova esperienza di installazione e primo avvio basata su due componenti:
 
@@ -97,13 +97,13 @@ Fedora descrive questa modifica come parte di una nuova esperienza KDE più inte
 
 ---
 
-## 2.1 Plasma Setup
+### 2.1 Plasma Setup
 
 Nelle nuove installazioni di Fedora KDE Plasma 44, il processo di installazione è stato semplificato. Anaconda non deve più necessariamente occuparsi di tutte le fasi di configurazione iniziale: alcune impostazioni vengono completate tramite **Plasma Setup al primo avvio**. Questo significa che, dopo aver terminato l'installazione e avviato per la prima volta il sistema, non bisogna necessariamente aspettarsi la stessa sequenza di schermate che si sarebbe incontrata seguendo una guida scritta per Fedora KDE precedente. Il primo avvio fa quindi parte integrante del processo di configurazione. La nuova procedura consente, tra le altre cose, di completare la configurazione dell'utente e del sistema attraverso un'interfaccia integrata nell'ambiente Plasma.
 
 ---
 
-## 2.2 Plasma Login Manager
+### 2.2 Plasma Login Manager
 
 Fedora KDE Plasma 44 introduce inoltre **Plasma Login Manager (PLM)** come display/login manager predefinito nelle nuove installazioni KDE, sostituendo SDDM. Questo è un cambiamento importante perché il display manager viene utilizzato prima ancora che la sessione KDE venga avviata. In pratica, è il componente responsabile della schermata di login e dell'avvio della sessione grafica. Per questo motivo una vecchia guida che contiene istruzioni come:
 
