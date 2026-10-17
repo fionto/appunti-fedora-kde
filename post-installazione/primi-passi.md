@@ -1,12 +1,12 @@
 # Post-installazione — Parte 1: i primi passi su Fedora 44 KDE Plasma
 
-Appena finita l'installazione, prima ancora di pensare a software, repository di terze parti o configurazioni estetiche, conviene fare tre cose nell'ordine giusto: **capire esattamente cosa si ha davanti**, **aggiornare tutto**, e **mettere a punto il gestore di pacchetti** che userai per ogni cosa da qui in avanti. Sono passaggi "noiosi", ma è proprio l'ordine in cui vengono fatti che evita un sacco di problemi più avanti — installare software terzo su un sistema non aggiornato, ad esempio, è uno dei modi più comuni per finire a inseguire conflitti di dipendenze che in realtà non hanno nulla a che fare col pacchetto che si sta installando.
+Appena finita l'installazione, prima ancora di pensare a software, repository di terze parti o configurazioni estetiche, conviene fare tre cose nell'ordine giusto: **capire esattamente cosa si ha davanti**, **aggiornare tutto**, e **mettere a punto il gestore di pacchetti** che userai per ogni cosa da qui in avanti. Sono passaggi "noiosi", ma è proprio l'ordine in cui vengono fatti che evita un sacco di problemi più avanti: installare software terzo su un sistema non aggiornato, ad esempio, è uno dei modi più comuni per finire a inseguire conflitti di dipendenze che in realtà non hanno nulla a che fare col pacchetto che si sta installando.
 
 ---
 
 ## Step 1 — Apri un terminale e orientati
 
-Su KDE Plasma il terminale predefinito è **Konsole** (lo trovi nel menu applicazioni, o con la scorciatoia di default `Ctrl+Alt+T` se non è stata cambiata). Da qui in avanti, quasi tutto passerà da qui.
+Su KDE Plasma il terminale predefinito è **Konsole** (lo trovi nel menu applicazioni, o con la scorciatoia di default `Ctrl+Alt+T`). Da qui in avanti, quasi tutto passerà da qui.
 
 ### Capire cosa hai installato
 
@@ -30,9 +30,7 @@ Molte guide online (e molti comandi che userai tu stesso in futuro) includono pe
 https://download.example.org/repo/fedora/44/x86_64/
 ```
 
-con il numero di versione scritto a mano, "hardcoded". Il problema è che tra qualche mese, quando farai l'upgrade a Fedora 45, quel comando copiato da una guida vecchia punterà ancora a `44` — e o fallisce silenziosamente, o (peggio) installa pacchetti pensati per la versione sbagliata.
-
-La soluzione è la **command substitution** di bash: la sintassi `$(comando)` dice alla shell "esegui questo comando, e sostituisci qui il suo output testuale". Quindi invece di scrivere:
+con il numero di versione scritto a mano, "hardcoded". Il problema è che tra qualche mese, quando farai l'upgrade a Fedora 45, quel comando copiato da una guida vecchia punterà ancora a `44` — e o fallisce silenziosamente, o (peggio) installa pacchetti pensati per la versione sbagliata. La soluzione è la **command substitution** di bash: la sintassi `$(comando)` dice alla shell "esegui questo comando, e sostituisci qui il suo output testuale". Quindi invece di scrivere:
 
 ```bash
 # da evitare: valore fisso, scade al prossimo upgrade
